@@ -1,0 +1,32 @@
+.contacts {
+
+    .contacts__flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: var(--main-gap);
+        gap: 1vw;
+        
+        .contacts__postal {
+            flex: 1 0 200px;
+            background-color: #3332;
+        }
+        
+        .contacts__eadr {
+            flex: 2 0 220px;
+            background-color: #3332;
+        }
+
+        .contacts__map {
+            flex: 1 0 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            aspect-ratio: 5/3;
+            overflow: hidden;
+            background-color: #3338;
+            border-radius: calc(var(--main-gap) / 3);
+        }
+
+    }
+}

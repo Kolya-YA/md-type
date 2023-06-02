@@ -1,0 +1,69 @@
+baseURL = 'http://example.org/'
+defaultContentLanguage = 'de'
+title = 'Doctor Site'
+theme = "mdcross"
+
+disableKinds = ["taxonomy", "term"]
+
+[params]
+    logoName = "Logo name"
+    email = "dr-artz@drmusterman.de"
+    phone = "+49 (0) 30 333 222 333"
+    address = [
+        "Steindorff Passage",
+        "Hauptstraße 2",
+        "10000 Hauptstadt",
+        "*Parkplätze stehen vor dem Haus zur Verfügung*"
+    ]
+    mainService = [
+        "Vorsorge & hausärztliche Beratung",
+        "Reisemedizin",
+        "Impfberatung",
+        "Bluthochdruckbehandlung",
+        "Sonographie / Ultraschall",
+        "Konservative Behandlungen",
+        "Operative Behandlungen",
+        "Versicherungs-Gutachten"
+    ]
+        
+    [params.social]
+        [params.social.in]
+            name = "LinkedIn"
+            link = ""
+            iconName = "linkedin"
+        [params.social.fb]
+            name = "Facebook"
+            link = ""
+            iconName = "facebook"
+        [params.social.instagram]
+            name = "Instagram"
+            link = ""
+            iconName = "instagram"  
+
+[languages]
+    [languages.en]
+        contentDir = 'content/en'
+        name = "Dr. Victoria Isolde Frank-Grunberg-Steiner"
+        descr = "Fachärztin für Gastroenterologie und Hepatologie"
+        [languages.en.menu]
+            [[languages.en.menu.legal]]
+                name = "Impressum"
+                weight = 10
+                url = "#"
+            [[languages.en.menu.legal]]
+                name = "Datenschutz"
+                weight = 20
+                url = "datenschutz"
+    [languages.de]
+        contentDir = 'content/de'
+        name = "Dr. Victoria Isolde Frank-Grunberg-Steiner"
+        descr = "Fachärztin für Gastroenterologie und Hepatologie"
+        [languages.de.menu]
+            [[languages.de.menu.legal]]
+                name = "Impressum"
+                weight = 10
+                url = "/impressum/"
+            [[languages.de.menu.legal]]
+                name = "Datenschutz"
+                weight = 20
+                url = "/datenschutz/"

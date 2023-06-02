@@ -1,0 +1,14 @@
+.cform {
+
+    .cform__label {
+        display: block;
+
+        .cform__input {
+            display: block;
+        }
+
+        span {
+            color: var(--main-red-1);
+        }
+    }
+}

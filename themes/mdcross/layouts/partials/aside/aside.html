@@ -1,0 +1,18 @@
+<aside>
+    <hr>
+    {{ partial "homepage/open" . }}
+    {{- partial "homepage/contacts" . -}}
+    <hr>
+    <section>
+        <h5 id="date">Last edit: {{ .Date.Format "2.01.2006" }}</h5>
+        <h5 id="wordcount"> {{ .WordCount }} Words </h5>
+    </section>
+    <div>
+        {{ with .PrevInSection }}
+        <a class="previous" href="{{ .Permalink }}"> {{ .Title }}</a>
+        {{ end }}
+        {{ with .NextInSection }}
+        <a class="next" href="{{ .Permalink }}"> {{ .Title }}</a>
+        {{ end }}
+    </div>
+</aside>

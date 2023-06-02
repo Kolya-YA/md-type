@@ -1,0 +1,37 @@
+<footer class="footer">
+    <div class="footer__top">
+        <div class="width-wrapper">
+            <div class="footer__top-inner">
+                <div class="footer__service">
+                    <h3 class="footer__service-name">{{ .Site.Params.Name }}</h3>
+                    <h4 class="footer__service-dscr">{{ .Site.Params.Descr }}</h4>
+                    <ul class="footer__service-list">
+                        {{ range .Site.Params.MainService }}
+                        <li class="footer__service-item">{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+
+                <div class="footer__address">
+                    <p>
+                        {{ range $i, $adr_str := .Site.Params.Address }}
+                        {{ if (eq $i 0) }}
+                        <b>{{ $adr_str }}</b>
+                        {{ else }}
+                        {{ $adr_str }}
+                        {{ end }}
+                        <br>
+                        {{ end }}
+                    </p>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Anfahrt mit googlemaps</a>
+                    <p>
+                        Tel: {{ .Site.Params.Phone }}<br>
+                        EMail: {{ .Site.Params.Email }}
+                    </p>
+                    <a class="link-btn" href="/form">Kontaktformular</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ partial "footer/footer-legal" . }}
+</footer>

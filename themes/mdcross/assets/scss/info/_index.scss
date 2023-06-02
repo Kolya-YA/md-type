@@ -1,0 +1,42 @@
+.info {
+
+    .info__details {
+        margin-block-end: var(--main-gap);
+        background-color: #3331;
+        border-radius: calc(var(--main-gap) / 3);
+        overflow: hidden;                
+        
+        .info__details-content {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 1500ms 100ms;
+            
+            & > div {
+                overflow: hidden;                
+                transition: padding 1s;
+            }
+        }
+
+        .info__summary {
+            padding: var(--main-gap);
+            background-color: #3333;
+            cursor: pointer;
+
+            * {
+                display: inline-block;
+                margin: 0;
+            }
+        }
+    }
+    
+    .info__details[open] {
+        
+        .info__details-content {
+            grid-template-rows: 1fr;
+            
+            & > div {
+                padding: var(--main-gap);                
+            }
+        }
+    }
+}
