@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html{{ with site.LanguageCode | default site.Language.Lang }} lang="{{ . }}"{{ end }}>
-    {{- partial "head.html" . -}}
+    {{- partial "head/head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
         {{ partial "separator" }}

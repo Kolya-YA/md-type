@@ -43,27 +43,29 @@ disableKinds = ["taxonomy", "term"]
 [languages]
     [languages.en]
         contentDir = 'content/en'
-        name = "Dr. Victoria Isolde Frank-Grunberg-Steiner"
-        descr = "Fachärztin für Gastroenterologie und Hepatologie"
-        [languages.en.menu]
-            [[languages.en.menu.legal]]
-                name = "Impressum"
-                weight = 10
-                url = "#"
-            [[languages.en.menu.legal]]
-                name = "Datenschutz"
-                weight = 20
-                url = "datenschutz"
+        [languages.en.params]
+            name = "Dr. Victoria Frank-Grunberg-Steiner"
+            descr = "Fachärztin für Gastroenterologie und Hepatologie"
+            [languages.en.menu]
+                [[languages.en.menu.legal]]
+                    name = "Impressum"
+                    weight = 10
+                    url = "#"
+                [[languages.en.menu.legal]]
+                    name = "Datenschutz"
+                    weight = 20
+                    url = "datenschutz"
     [languages.de]
         contentDir = 'content/de'
-        name = "Dr. Victoria Isolde Frank-Grunberg-Steiner"
-        descr = "Fachärztin für Gastroenterologie und Hepatologie"
-        [languages.de.menu]
-            [[languages.de.menu.legal]]
-                name = "Impressum"
-                weight = 10
-                url = "/impressum/"
-            [[languages.de.menu.legal]]
-                name = "Datenschutz"
-                weight = 20
-                url = "/datenschutz/"
+        [languages.de.params]
+            name = "Dr. Victoria Frank-Grunberg-Steiner"
+            descr = "Fachärztin für Gastroenterologie und Hepatologie"
+            [languages.de.menu]
+                [[languages.de.menu.legal]]
+                    name = "Impressum"
+                    weight = 10
+                    url = "/impressum/"
+                [[languages.de.menu.legal]]
+                    name = "Datenschutz"
+                    weight = 20
+                    url = "/datenschutz/"

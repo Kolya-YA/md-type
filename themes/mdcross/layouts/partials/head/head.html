@@ -1,3 +1,5 @@
+{{- $styles := partial "head/styles" }}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +10,8 @@
       document.documentElement.classList.replace('no-js', 'js');
     </script>
     
-    {{- $scss := resources.Get "scss/main.scss" }}
-    {{/*  {{- $style := $scss | toCSS | minify | fingerprint }}  */}}
-    {{- $style := $scss | toCSS }}
-    
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-
-    <link rel="stylesheet" href="print.css" media="print">
+    <link rel="preload" href="{{ $styles.RelPermalink }}" as="style">
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">  
     
     <meta property="og:title" content="🛑 Change me">
     <meta name="description" content="🛑 Change me (up to ~155 characters)">

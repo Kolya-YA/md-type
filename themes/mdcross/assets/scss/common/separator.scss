@@ -3,7 +3,7 @@
     height: 0;
     // box-shadow: var(--main-shadow);
     margin-block: calc(var(--section-padding) / 2);
-    border-bottom: 3px dotted var(--btn-grey);
+    border-bottom: 3px dotted var(--main-blue-100);
 
     &.separator--visible {
         width: 100%;

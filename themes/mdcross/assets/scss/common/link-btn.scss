@@ -2,16 +2,15 @@
     display: inline-block;    
     padding-block: calc(var(--main-gap) / 3);
     padding-inline: calc(var(--main-gap) * 1.5);
-    background-color: var(--main-blue-4);
+    background-color: var(--main-blue-400);
     border-radius: calc(var(--main-gap) / 3);
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
-    transition-duration: 300ms;
-    
+    transition-duration: 300ms;    
 }
 
 .link-btn:hover,
 .link-btn:focus-visible {
-    background-color: var(--main-green-4);
-    color: var(--main-yellow-1);
+    background-color: var(--main-blue-100);
+    color: var(--main-yellow-400);
 }

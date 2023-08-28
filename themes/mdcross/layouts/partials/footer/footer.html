@@ -18,7 +18,7 @@
                         {{ if (eq $i 0) }}
                         <b>{{ $adr_str }}</b>
                         {{ else }}
-                        {{ $adr_str }}
+                        {{ $adr_str | markdownify }}
                         {{ end }}
                         <br>
                         {{ end }}

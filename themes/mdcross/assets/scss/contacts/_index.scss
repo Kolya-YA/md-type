@@ -2,31 +2,24 @@
 
     .contacts__flex {
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: var(--main-gap);
         gap: 1vw;
         
-        .contacts__postal {
-            flex: 1 0 200px;
+        > * {
+            flex: 1;
+            padding: var(--main-gap);
             background-color: #3332;
-        }
-        
-        .contacts__eadr {
-            flex: 2 0 220px;
-            background-color: #3332;
-        }
-
-        .contacts__map {
-            flex: 1 0 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            aspect-ratio: 5/3;
-            overflow: hidden;
-            background-color: #3338;
             border-radius: calc(var(--main-gap) / 3);
         }
 
+        .contacts__map {
+            display: grid;
+            place-content: center;
+            aspect-ratio: 5/3;
+            padding: 0;
+            overflow: hidden;
+            background-color: var(--main-red-100);
+        }
     }
 }
