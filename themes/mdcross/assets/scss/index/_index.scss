@@ -1,8 +1,8 @@
 .index__top {
     display: flex;
     flex-direction: column;
-    gap: var(--main-gap);
-    margin-block-end: var(--main-gap);
+    gap: var(--section-gap);
+    margin-block-end: var(--section-gap);
 }
 
 .index__bottom {
@@ -10,7 +10,7 @@
     // flex-direction: row-reverse;
     flex-wrap: wrap;
     gap: var(--main-gap);
-    margin-block-end: var(--main-gap);
+    margin-block-end: var(--section-gap);
 
     .index__bottom-contacts {
         flex: 1 0 340px;

@@ -1,7 +1,8 @@
 .footer {
     .footer__top {
-        padding-top: var(--main-gap);
-        background-color: #eee;
+        padding-block: var(--main-gap);
+        background-color: var(--medium-bgc);
+        border-top: var(--hair-line);
 
         .footer__top-inner {
             display: flex;

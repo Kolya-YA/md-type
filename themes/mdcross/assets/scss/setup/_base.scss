@@ -19,7 +19,8 @@
         font-family: var(--common-font-family);
         font-size: var(--common-font-size);
         line-height: 1.5em;
-        background-color: var(--body-bg-color);
+        // background-color: var(--body-bg-color);
+        background-image: var(--body-bg-img);
         color: var(--main-text-color);
     }
 

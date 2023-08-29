@@ -12,14 +12,13 @@
             padding-inline: calc(var(--main-gap) * 2);
             background-color: #333b;
             text-transform: uppercase;
-            color: #fff;
+            color: var(--white);
             line-height: 1;
             
         }
         
         .hero__content-title {
-            color: crimson;
-
+            color: var(--main-yellow-400);
         }
     }
 

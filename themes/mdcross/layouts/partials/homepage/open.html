@@ -1,10 +1,10 @@
 {{ $headless := .Site.GetPage "/headless" }}
 {{ with $headless.Resources.GetMatch "open*" }}
-<div class="open">
-    <h3 class="open__title">{{ .Title }}</h3>
+<section class="open">
+    <h2 class="open__title">{{ .Title }}</h2>
     {{ with .Params.Days }}
     <ul class="open__list">
-        {{ range . }}
+        {{ range first 7 . }}
         {{ if gt (. | len) 1 }}
         <li  class="open__item">
             <div class="open__item-card">
@@ -28,5 +28,5 @@
     </ul>
     {{ end }}
     {{ .Content }}
-</div>
+</section>
 {{ end }}

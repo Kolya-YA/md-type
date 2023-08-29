@@ -1,6 +1,4 @@
 :root {
-    // Base colors
-
     // Main red color
     --hue0: 51;
     --main-red-100: oklch(70% 0.194 var(--hue0));
@@ -30,18 +28,20 @@
     --blue: #0080ff;
     --yellow: #f6d927;
     --yellow-tr: #f6d92740;
+
     --white: #ffffff;
+
+    --light-bgc: #fafafa;
+    --medium-bgc: #f2f2f2;
     --dark-bgc: #1d1d1d;
+
     --dark-overlay-color: #1d1d1db0;
+
     --main-text-color: #3b3b3b;
     --light-text-color: #f2f2f2;
     --light-text-color-tr: #f2f2f240;
     --light-text-color-semitr: #f2f2f288;
     --color-tr: #00000000;
-    
+
     --main-shadow: 0 0 10px -4px var(--main-blue-1);
-    --red-gradient: linear-gradient(90deg, var(--main-red) 0%, #7d1111 100%);
-    --red-gradient-r: linear-gradient(90deg, #7d1111 0%, var(--main-red) 70%);
-    --yellow-gradient: linear-gradient(90deg, #fff0a9 0%, #ffe052 100%);
-    --yellow-gradient1: linear-gradient(90deg, #fff0a9 0%, var(--yellow) 100%);
 }

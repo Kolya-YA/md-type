@@ -18,7 +18,8 @@
             padding-inline: .5vw;
             border-radius: calc(var(--main-gap) / 3);
             background-color: var(--body-bg-color);
-            background-color: #3331;
+            // background-color: #3331;
+            background-image: var(--day-bg-img);
             text-align: center;
             // box-shadow: var(--main-shadow);
             container-type: inline-size;
