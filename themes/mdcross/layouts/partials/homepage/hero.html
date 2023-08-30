@@ -8,7 +8,11 @@
         {{ with .Title }}
         <h2 class="hero__content-title">{{ . }}</h2>
         {{ end }}
-        {{ .Content -}}    
+        {{ .Content -}}
+
+        {{ with .Params.Cv }}
+            {{ partial "cv-modal" . }}
+        {{- end }}
     </div>
     <div class="hero__photo">
         {{ with $heroPhoto }}

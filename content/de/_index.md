@@ -3,9 +3,10 @@ date: "2023-01-01"
 title: "Ihr Orthopäde und Unfallchirurg in Hamburg"
 greeting: "Herzlich willkommen"
 heroPhoto: "images/nate-johnston-fNSPSQAH1mQ-unsplash.jpg"
+cv: "cv.md"
 ---
 
-### Dr. Victoria Isolde Frank-Grunberg-Steiner
+### Dr. Victoria Frank-Grunberg-Steiner
 
 - Facharzt für Orthopädie und Unfallchirurgie
 - Spezielle Unfallchirurgie
@@ -13,8 +14,4 @@ heroPhoto: "images/nate-johnston-fNSPSQAH1mQ-unsplash.jpg"
 
 **Wahlarzt** mit Praxis am Gutspark
 
-**Oberarzt** am Krankenhaus Berlin (mit der Möglichkeit zur ambulanten und stationären Behandlung im Krankenhaus)
-
-{{< link-btn href="#" ext="false" style="red" >}}
-Lebenslauf
-{{< /link-btn >}}
+**Oberarzt** am Krankenhaus Ulm (mit der Möglichkeit zur ambulanten und stationären Behandlung im Krankenhaus)

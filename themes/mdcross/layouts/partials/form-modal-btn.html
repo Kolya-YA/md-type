@@ -1,0 +1,6 @@
+{{- $headless := site.GetPage "/headless" }}
+{{ with $headless.Resources.GetMatch . }}
+<div class="form-modal">
+    <button class="form-modal__show">{{ .Params.openBtn }}</button>
+</div>
+{{ end }}
