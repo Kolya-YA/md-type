@@ -1,6 +1,6 @@
 const openCvBtns = document.querySelectorAll('.open-cv') as NodeListOf<HTMLButtonElement>;
-const closeCvBtn = document.querySelector('.cv-modal__close') as HTMLButtonElement;
 const cvDialog = document.querySelector('.cv-dialog') as HTMLDialogElement;
+const closeCvBtn = cvDialog.querySelector('.dialog-btn__close') as HTMLButtonElement;
 
 // cvDialog.showModal();
 

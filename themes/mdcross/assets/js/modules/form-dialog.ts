@@ -1,8 +1,8 @@
 const openFormBtns = document.querySelectorAll('.open-form') as NodeListOf<HTMLButtonElement>;
-const closeFormBtn = document.querySelector('.form-modal__close') as HTMLButtonElement;
 const formDialog = document.querySelector('.form-dialog') as HTMLDialogElement;
+const closeFormBtn = formDialog.querySelector('.dialog-btn__close') as HTMLButtonElement;
 
-formDialog.showModal();
+// formDialog.showModal();
 
 openFormBtns?.forEach(oBtn => {oBtn.addEventListener('click', () => {    
         formDialog.showModal();
