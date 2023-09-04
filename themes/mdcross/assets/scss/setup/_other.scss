@@ -4,6 +4,8 @@
     --main-gap: 1rem;
     --section-gap: calc(var(--main-gap) * 2);
 
+    --border-radius: calc(var(--main-gap) / 3);
+
     // Lines
         --hair-line: solid 1px var(--main-blue-100);
 

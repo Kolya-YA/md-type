@@ -10,7 +10,7 @@ disableKinds = ["taxonomy", "term"]
     email = "dr-artz@drmusterman.de"
     phone = "+49 (0) 30 333 222 333"
     address = [
-        "Steindorff Passage",
+        "**Steindorff Passage**",
         "Hauptstraße 2",
         "10000 Hauptstadt",
         "*Parkplätze stehen vor dem Haus zur Verfügung*"

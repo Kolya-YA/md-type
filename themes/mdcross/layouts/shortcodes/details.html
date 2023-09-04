@@ -1,14 +1,14 @@
 <details 
     class="info__details"
-    {{ if eq (.Get 1) "open"}}
+    {{- if eq (.Get 1) "open"}}
     data-visible="true"
     open
-    {{ end }}
+    {{- end }}
     >
     <summary class="info__summary">
-        {{ with .Get 0 }}
+        {{- with .Get 0 }}
             <h3>{{ . | markdownify }}</h3>
-        {{ end }}
+        {{- end }}
     </summary>
     <div class="info__details-content">
         <div>

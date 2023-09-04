@@ -2,18 +2,13 @@
     <div class="contacts__flex">
         <div class="contacts__postal">
             {{- range $i, $adr_str := .Site.Params.Address }}
-                {{- if (eq $i 0) }}
-                    <b>{{ $adr_str }}</b>
-                {{- else }}
-                    {{ $adr_str | markdownify }}
-                {{- end -}}
-                <br>
+                {{ $adr_str | markdownify }}<br>
             {{- end }}
         </div>
         <div class="contacts__eadr">
             Tel: <a href="tel:{{ .Site.Params.Phone }}">{{ .Site.Params.Phone }}</a><br>
             EMail: <a href="mailto:{{ .Site.Params.Email }}">{{ .Site.Params.Email }}</a>
-            {{ partial "form-modal" "cform.md" }}
+            {{ partial "common/form-modal" (dict "source" "cform.md") }}
         </div>
         <div class="contacts__map">
             Map

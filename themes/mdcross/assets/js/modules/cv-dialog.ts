@@ -1,13 +1,25 @@
-const showCvBtn = document.querySelector('.cv-modal__show') as HTMLButtonElement;
+const openCvBtns = document.querySelectorAll('.open-cv') as NodeListOf<HTMLButtonElement>;
 const closeCvBtn = document.querySelector('.cv-modal__close') as HTMLButtonElement;
-const cvDetails = document.querySelector('.cv-modal__dialog') as HTMLDialogElement;
+const cvDialog = document.querySelector('.cv-dialog') as HTMLDialogElement;
 
-// cvDetails.showModal();
+// cvDialog.showModal();
 
-showCvBtn.addEventListener('click', () => {    
-    cvDetails.showModal();
-});
+openCvBtns?.forEach(oBtn => {oBtn.addEventListener('click', () => {
+    cvDialog.showModal();
+    document.body.style.overflow = 'hidden';
+    });     
+}, false);
 
-closeCvBtn.addEventListener('click', () => {
-    cvDetails.close();
-});
+closeCvBtn?.addEventListener('click', () => {
+    cvDialog.close();
+}, false);
+
+cvDialog?.addEventListener('click', ({ target })=> {
+    if ((target as HTMLDialogElement).nodeName === 'DIALOG') {
+        (target as HTMLDialogElement).close('dismiss');
+    }
+}, false);
+
+cvDialog?.addEventListener('close', () => {
+    document.body.style.overflow = 'auto';     
+}, false);

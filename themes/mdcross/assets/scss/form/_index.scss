@@ -2,13 +2,26 @@
 
     .cform__label {
         display: block;
+        margin-block-end: var(--main-gap);
 
         .cform__input {
             display: block;
+            width: 100%;
+            font: inherit;
+            // min-height: 2em;
+            padding: .2em .5em;
         }
 
         span {
             color: var(--main-red-100);
         }
+    }
+
+    &__btns {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: var(--main-gap);
     }
 }

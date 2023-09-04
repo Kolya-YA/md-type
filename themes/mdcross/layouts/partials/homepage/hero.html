@@ -1,28 +1,26 @@
-
 {{ $heroPhoto := resources.Get (.Params.HeroPhoto) }}
 <section class="hero">
     <div class="hero__content">
-        {{ with .Params.Greeting }}
+        {{- with .Params.Greeting }}
         <div class="hero__content-greeting">{{ . }}</div>
-        {{ end }}
-        {{ with .Title }}
+        {{- end }}
+        {{- with .Title }}
         <h2 class="hero__content-title">{{ . }}</h2>
-        {{ end }}
-        {{ .Content -}}
-
-        {{ with .Params.Cv }}
-            {{ partial "cv-modal" . }}
+        {{- end }}
+        {{ .Content }}
+        {{- with .Params.Cv }}
+            {{ partial "common/cv-modal" (dict "source" .) }}
         {{- end }}
     </div>
     <div class="hero__photo">
-        {{ with $heroPhoto }}
-        {{ $img := .Resize "420x webp q80"}}
+        {{- with $heroPhoto }}
+        {{- $img := .Resize "420x webp q80" }}
         <img
             src="{{ $img.RelPermalink }}"
             width="{{ $img.Width }}"
             height="{{ $img.Height }}"
             alt="{{ $.Site.Params.Name }}"
             >
-        {{ end }}
+        {{- end }}
     </div>
 </section>

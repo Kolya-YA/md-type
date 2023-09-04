@@ -1,32 +1,32 @@
 {{ $headless := .Site.GetPage "/headless" }}
-{{ with $headless.Resources.GetMatch "open*" }}
+{{- with $headless.Resources.GetMatch "open*" }}
 <section class="open">
     <h2 class="open__title">{{ .Title }}</h2>
-    {{ with .Params.Days }}
+    {{- with .Params.Days }}
     <ul class="open__list">
-        {{ range first 7 . }}
-        {{ if gt (. | len) 1 }}
+        {{- range first 7 . }}
+        {{- if gt (. | len) 1 }}
         <li  class="open__item">
             <div class="open__item-card">
                 <div class="open__item-day--long">{{ index . 0 }}</div>
                 <div class="open__item-day--small">{{ slicestr (index . 0) 0 2 }}</div>
                 <div class="open__item-time">
-                    {{ range (index . 1) }}
-                        {{ if gt ( . | len )  0 }}
+                    {{- range (index . 1) }}
+                        {{- if gt ( . | len )  0 }}
                         <div class="open__item-line">
                             {{ index . 0 }} – {{ index . 1 }}
                         </div>
-                        {{ else }}
+                        {{- else }}
                         <div class="open__item-line">–</div>
-                        {{ end }}
-                    {{ end }}
+                        {{- end }}
+                    {{- end }}
                 </div>
             </div>
         </li>
-        {{ end }}
-        {{ end }}
+        {{- end }}
+        {{- end }}
     </ul>
-    {{ end }}
+    {{- end }}
     {{ .Content }}
 </section>
-{{ end }}
+{{- end }}

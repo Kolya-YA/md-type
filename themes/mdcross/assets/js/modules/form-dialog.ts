@@ -1,15 +1,25 @@
-const showFormBtns = document.querySelectorAll('.form-modal__show') as NodeListOf<HTMLButtonElement>;
+const openFormBtns = document.querySelectorAll('.open-form') as NodeListOf<HTMLButtonElement>;
 const closeFormBtn = document.querySelector('.form-modal__close') as HTMLButtonElement;
-const formDetails = document.querySelector('.form-modal__dialog') as HTMLDialogElement;
+const formDialog = document.querySelector('.form-dialog') as HTMLDialogElement;
 
-// formDetails.showModal();
+formDialog.showModal();
 
-showFormBtns.forEach(sFB => {
-    sFB.addEventListener('click', () => {    
-        formDetails.showModal();
-    })
+openFormBtns?.forEach(oBtn => {oBtn.addEventListener('click', () => {    
+        formDialog.showModal();
+        document.body.style.overflow = 'hidden';
+    }, false);
 });
 
-closeFormBtn.addEventListener('click', () => {
-    formDetails.close();
-});
+closeFormBtn?.addEventListener('click', () => {
+    formDialog.close();
+}, false);
+
+formDialog?.addEventListener('click', ({ target })=> {
+    if ((target as HTMLDialogElement).nodeName === 'DIALOG') {
+        (target as HTMLDialogElement).close('dismiss');
+    }
+}, false);
+
+formDialog?.addEventListener('close', () => {
+    document.body.style.overflow = 'auto';     
+}, false);

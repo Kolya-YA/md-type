@@ -1,13 +1,16 @@
 ---
 date: "2023-01-01"
 title: "Lebenslauf"
+openBtn: "Lebenslauf"
 ---
 
 ### Inhaltsentwurf
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. A corrupti quia voluptatem, perspiciatis sit quam ratione libero voluptas non praesentium consequuntur quo possimus maxime adipisci exercitationem iste aut, animi odio repellat in cum! Omnis saepe, explicabo accusamus molestias illum, dolore illo labore officia id nihil alias nam, nisi sapiente quae!
 
-### BILDUNGSWEG
+Omnis saepe, explicabo accusamus molestias illum, dolore illo labore officia id nihil alias nam, nisi sapiente quae!
+
+### Bildungsweg
 
 #### 2010 – 2013
 
