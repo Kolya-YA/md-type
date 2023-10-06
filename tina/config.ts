@@ -5,12 +5,12 @@ import { infoBlock } from "./collections/info";
 import { simplePage } from "./collections/simplePage";
 
 // Your hosting provider likely exposes this as an environment variable
-const branch = "tina";
+const branch = process.env.HEAD || "tina";
 
 export default defineConfig({
   branch,
-  clientId: null, // Get this from tina.io
-  token: null, // Get this from tina.io
+  clientId: process.env.NUXT_TINA_CLIENT_ID || "", // Get this from tina.io
+  token: process.env.NUXT_TINA_TOKEN || "", // Get this from tina.io
 
   build: {
     outputFolder: "admin",
