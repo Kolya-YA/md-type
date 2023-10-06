@@ -1,6 +1,6 @@
 ---
-title: "Impressum"
 date: "2023-01-01"
+title: Impressum
 ---
 
 {{< link-btn href="/" style="red" >}}
@@ -19,7 +19,7 @@ Hauptstraße 27,
 
 **Telefon:** +49 (0) 30 222 333 222
 
-**E-Mail-Adresse:** <info@drmustermann.de>
+**E-Mail-Adresse:** [info@drmustermann.de](mailto:info@drmustermann.de)
 
 Aufsichtsbehörde:
 
@@ -29,7 +29,7 @@ Berufsbezeichnung: Ärzte
 Zuständige Kammer: Ärztekammer Hauptsdadt
 Verliehen durch: Hauptstadt
 Es gelten folgende berufsrechtliche Regelungen:
-Regelungen einsehbar unter: <http://www.aerztekammer-XXX.de>
+Regelungen einsehbar unter: [http://www.aerztekammer-XXX.de](http://www.aerztekammer-xxx.de)
 
 ### Haftung für Inhalte
 
