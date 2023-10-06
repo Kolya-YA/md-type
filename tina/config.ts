@@ -9,8 +9,8 @@ const branch = process.env.HEAD || "tina";
 
 export default defineConfig({
   branch,
-  clientId: process.env.NUXT_TINA_CLIENT_ID || "", // Get this from tina.io
-  token: process.env.NUXT_TINA_TOKEN || "", // Get this from tina.io
+  clientId: process.env.TINA_PUBLIC_CLIENT_ID || null, // Get this from tina.io
+  token: process.env.TINA_TOKEN || null, // Get this from tina.io
 
   build: {
     outputFolder: "admin",
