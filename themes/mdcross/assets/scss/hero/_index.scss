@@ -5,16 +5,22 @@
 
     .hero__content {
         flex: 3 0 220px;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        justify-items: start;
         
         .hero__content-greeting {
             display: inline-block;
-            padding-block: calc(var(--main-gap) / 4);
+            padding-block: calc(var(--main-gap) / 3);
             padding-inline: calc(var(--main-gap) * 2);
             background-color: #333b;
             text-transform: uppercase;
             color: var(--white);
             line-height: 1;
-            
+        }
+
+        .hero__content-text {
+            align-self: center;
         }
         
         .hero__content-title {

@@ -4,11 +4,13 @@
         {{- with .Params.Greeting }}
         <div class="hero__content-greeting">{{ . }}</div>
         {{- end }}
-        {{- with .Title }}
-        <h2 class="hero__content-title">{{ . }}</h2>
-        {{- end }}
-        {{ .Content }}
-        {{- with .Params.Cv }}
+        <div class="hero__content-text">
+            {{- with .Title }}
+            <h2 class="hero__content-title">{{ . }}</h2>
+            {{- end }}
+            {{ .Content }}
+        </div>
+            {{- with .Params.Cv }}
             {{ partial "common/cv-modal" (dict "source" .) }}
         {{- end }}
     </div>

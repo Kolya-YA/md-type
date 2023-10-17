@@ -7,9 +7,8 @@
 
 .index__bottom {
     display: flex;
-    // flex-direction: row-reverse;
     flex-wrap: wrap;
-    gap: var(--main-gap);
+    gap: var(--block-gap);
     margin-block-end: var(--section-gap);
 
     .index__bottom-contacts {

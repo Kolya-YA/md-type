@@ -2,6 +2,11 @@
 <div class="width-wrapper">
     <div class="page-wrapper">
         <main class="main">
+            {{ if (not .IsHome) }}
+            <a class="main__back-btn" href="{{ .Site.BaseURL | relLangURL }}">
+                <span>⇐</span> Zur Startseite
+            </a>
+            {{- end }}
             <article id="content">
                 <h1 id="title">{{ .Title }}</h1>
                 {{ .Content }}

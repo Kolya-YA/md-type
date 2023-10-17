@@ -2,6 +2,7 @@
     // Other
     --header-top-height: 58px;
     --main-gap: 1rem;
+    --block-gap: max(1rem, 2vw);
     --section-gap: calc(var(--main-gap) * 2);
 
     --border-radius: calc(var(--main-gap) / 3);

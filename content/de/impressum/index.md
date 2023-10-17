@@ -3,10 +3,6 @@ title: "Impressum"
 date: "2023-01-01"
 ---
 
-{{< link-btn href="/" style="red" >}}
-Home
-{{< /link-btn >}}
-
 IMPRESSUM
 Angaben gemäß § 5 TMG:
 
