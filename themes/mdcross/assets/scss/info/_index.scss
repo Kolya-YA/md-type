@@ -1,5 +1,4 @@
 .info {
-
     .info__details {
         margin-block-end: var(--main-gap);
         background-color: #3331;
@@ -9,11 +8,10 @@
         .info__details-content {
             display: grid;
             grid-template-rows: 0fr;
-            transition: grid-template-rows 1500ms 100ms;
             
-            & > div {
+            & > * {
                 overflow: hidden;                
-                transition: padding 1s;
+                padding: var(--main-gap); 
             }
         }
 
@@ -29,14 +27,25 @@
         }
     }
     
-    .info__details[open] {
-        
+    .info__details[open] {        
         .info__details-content {
-            grid-template-rows: 1fr;
-            
-            & > div {
-                padding: var(--main-gap);                
-            }
+            animation: open 300ms ease-out forwards;
         }
+    }
+    
+    .info__details.closing {        
+        .info__details-content {
+            animation: close 300ms ease-out forwards;
+        }
+    }
+    
+    @keyframes open {
+        0% {grid-template-rows: 0fr;}
+        100% {grid-template-rows: 1fr;}
+    }
+
+    @keyframes close {
+        0% {grid-template-rows: 1fr;}
+        100% {grid-template-rows: 0fr;}
     }
 }
