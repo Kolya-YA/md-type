@@ -12,13 +12,14 @@
                 <div class="open__item-day--small">{{ slicestr (index . 0) 0 2 }}</div>
                 <div class="open__item-time">
                     {{- range (index . 1) }}
+                    <div class="open__item-line">
                         {{- if gt ( . | len )  0 }}
-                        <div class="open__item-line">
-                            {{ index . 0 }} – {{ index . 1 }}
-                        </div>
+                            {{ printf "%02d – %02d" (index . 0) (index . 1) }}
+                            {{/*  {{ index . 0 }} – {{ index . 1 }}  */}}
                         {{- else }}
-                        <div class="open__item-line">–</div>
-                        {{- end }}
+                            –
+                            {{- end }}
+                    </div>
                     {{- end }}
                 </div>
             </div>
