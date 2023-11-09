@@ -1,6 +1,6 @@
 console.log('Info Details');
 
-const infoDetails: NodeListOf<HTMLElement> = document.querySelectorAll('.info__details33')
+const infoDetails: NodeListOf<HTMLElement> = document.querySelectorAll('.info__details')
 
 infoDetails.forEach((iD: HTMLElement) => {
     iD.addEventListener('click', (event) => {
