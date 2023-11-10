@@ -22,7 +22,9 @@
                         {{ $adr_str | markdownify }}<br>
                         {{- end }}
                     </p>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">Anfahrt mit googlemaps</a>
+                    {{ with site.Params.MapDirections }}
+                    <a href="{{ . }}" target="_blank" rel="noopener noreferrer">Anfahrt mit googlemaps</a>
+                    {{ end }}
                     <p>
                         Tel: {{ .Site.Params.Phone }}<br>
                         EMail: {{ .Site.Params.Email }}

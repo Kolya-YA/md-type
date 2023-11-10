@@ -1,14 +1,17 @@
 <section class="contacts index__bottom-contacts">
     <div class="contacts__flex">
         <div class="contacts__eadr">
-            Tel: <a href="tel:{{ site.Params.Phone }}">{{ .Site.Params.Phone }}</a><br>
-            EMail: <a href="mailto:{{ site.Params.Email }}">{{ .Site.Params.Email }}</a>
+            Tel: <a href="tel:{{ site.Params.Phone }}">{{ site.Params.Phone }}</a><br>
+            EMail: <a href="mailto:{{ site.Params.Email }}">{{ site.Params.Email }}</a>
             {{ partial "common/form-modal" (dict "source" "cform.md") }}
         </div>
         <div class="contacts__postal">
-            {{- range $i, $adr_str := .Site.Params.Address }}
+            {{- range $i, $adr_str := site.Params.Address }}
                 {{ $adr_str | markdownify }}<br>
             {{- end }}
+            {{ with site.Params.MapDirections }}
+            <a href="{{ . }}" target="_blank" rel="noopener noreferrer">Anfahrt mit googlemaps</a>
+            {{ end }}
         </div>
         <div class="contacts__map">
             <img src="" alt="Karte, wie Sie uns finden.">            
