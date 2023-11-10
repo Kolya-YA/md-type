@@ -8,8 +8,9 @@
             display: block;
             width: 100%;
             font: inherit;
-            // min-height: 2em;
             padding: .2em .5em;
+            border: none;
+            border-block-end: solid 2px var(--main-blue-100);
         }
 
         span {

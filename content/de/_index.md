@@ -3,7 +3,6 @@ date: "2023-01-01"
 title: "Ihr Orthopäde und Unfallchirurg in Hamburg"
 greeting: "Herzlich willkommen"
 heroPhoto: "images/nate-johnston-fNSPSQAH1mQ-unsplash.jpg"
-cv: "cv.md"
 ---
 
 ### Dr. Victoria Frank-Grunberg-Steiner

@@ -25,6 +25,8 @@ disableKinds = ["taxonomy", "term"]
         "Operative Behandlungen",
         "Versicherungs-Gutachten"
     ]
+    cv = "cv.md"
+    terminLink = "https://www.doctolib.de/"
         
     [params.social]
         [params.social.in]

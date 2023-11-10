@@ -1,9 +1,12 @@
-.button {
+.button,
+.link-btn {
+    display: inline-block;
     position: relative;
     isolation: isolate;
     overflow: hidden;
     padding: .5em 2em;
     font: inherit;
+    text-decoration: none;
     color: var(--white);
     background-color: var(--main-blue-200);
     border: 2px solid var(--main-blue-100);

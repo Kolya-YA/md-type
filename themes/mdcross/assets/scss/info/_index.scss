@@ -8,6 +8,7 @@
         .info__details-content {
             display: grid;
             grid-template-rows: 0fr;
+            will-change: grid-template-rows;
             
             & > * {
                 overflow: hidden;                

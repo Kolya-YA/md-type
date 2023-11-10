@@ -10,8 +10,8 @@
             {{- end }}
             {{ .Content }}
         </div>
-            {{- with .Params.Cv }}
-            {{ partial "common/cv-modal" (dict "source" .) }}
+        {{- with site.Params.TerminLink }}
+            <a  class="link-btn" href="{{ . }}" target="_blank" rel="noopener noreferrer">Termin vereinbaren</a><br>
         {{- end }}
     </div>
     <div class="hero__photo">

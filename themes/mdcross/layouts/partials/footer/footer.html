@@ -5,6 +5,10 @@
                 <div class="footer__service">
                     <h3 class="footer__service-name">{{ .Site.Params.Name }}</h3>
                     <h4 class="footer__service-dscr">{{ .Site.Params.Descr }}</h4>
+
+        {{- with site.Params.Cv }}
+        {{ partial "common/cv-modal" (dict "source" .) }}
+    {{- end }}
                     <ul class="footer__service-list">
                         {{- range .Site.Params.MainService }}
                         <li class="footer__service-item">{{ . }}</li>
